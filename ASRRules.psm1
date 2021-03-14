@@ -107,15 +107,17 @@ Begin {
     $Rules  = $RawConfig.AttackSurfaceReductionRules_Ids
     $Actions = $RawConfig.AttackSurfaceReductionRules_Actions
 
-    $i=0
-    $RawData = $Rules |
-    ForEach-Object {
-        [PSCustomObject]@{
-            Guid = $_
-            Name = "$((Get-ASRRuleData -Id $_).RuleName)"
-            Action = [ASRAction]$Actions[$i]
-        }
-        $i++
+    if ($Rules) {
+	    $i=0
+	    $RawData = $Rules |
+	    ForEach-Object {
+		[PSCustomObject]@{
+		    Guid = $_
+		    Name = "$((Get-ASRRuleData -Id $_).RuleName)"
+		    Action = [ASRAction]$Actions[$i]
+		}
+		$i++
+	    }
     }
     $RawData += Get-ASRRuleData | Where-Object { $_.Guid -notin $Rules } |
     ForEach-Object {
