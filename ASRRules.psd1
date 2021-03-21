@@ -47,7 +47,7 @@ PrivateData = @{
         # A URL to the main website for this project.
          ProjectUri = 'https://github.com/p0w3rsh3ll/ASRRules'
 
-         ExternalModuleDependencies = 'ConfigDefender'
+         ExternalModuleDependencies = @('ConfigDefender')
 
     } # End of PSData hashtable
 
