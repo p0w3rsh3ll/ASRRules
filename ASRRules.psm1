@@ -354,6 +354,14 @@ DynamicParam {
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
         },
         @{
+            Category = 'Device Control'
+            RuleName = 'Block abuse of exploited vulnerable signed drivers'
+	        GUID = '56a863a9-875e-4185-98a7-b882c64b5ce5'
+            'File & folder exclusions Supported' =	$true
+            MinOSVersion = [version]'10.0.16299.0'
+            'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
+        },
+        @{
             Category = 'Microsoft Office'
             RuleName = 'Block  Win32 API calls from Office macros'
 	        GUID = '92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B'
