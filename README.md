@@ -212,6 +212,10 @@ SYNOPSIS
 
 None yet, but if you find one please let me know by opening an issue in this repository
 
+## Blog posts about this module
+
+https://p0w3rsh3ll.wordpress.com/2021/03/25/windows-defender-attack-surface-reduction-asr-rules-module/
+
 ## Useful links
 
 https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction
