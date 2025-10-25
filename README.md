@@ -17,7 +17,7 @@ Find-Module -Name ASRRules -Repository PSGallery
 Save-Module -Name ASRRules -Repository PSGallery -Path ~/Downloads
 
 # Import the module
-Import-Module ~/Downloads/ASRRules/1.0.0/ASRRules.psd1 -Force -Verbose
+Import-Module ~/Downloads/ASRRules/2.0.0/ASRRules.psd1 -Force -Verbose
 ```
 
 ### Functions
@@ -198,7 +198,7 @@ SYNOPSIS
 
     -------------------------- EXAMPLE 2 --------------------------
 
-    C:\PS>Get-ASRRuleData | Set-ASRRuleConfig -WhatIf -Mode AuditMode
+    C:\PS>Get-ASRRuleData | Set-ASRRuleConfig -Mode AuditMode -Verbose
 
 
     Change all local rules and set their config to AuditMode
