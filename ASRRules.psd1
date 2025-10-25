@@ -4,7 +4,7 @@
 RootModule = 'ASRRules.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '2.0.0'
 
 # ID used to uniquely identify this module
 GUID = '7cd70489-80bc-4cd9-931c-18fba4dfe0ac'
