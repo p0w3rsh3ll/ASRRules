@@ -39,7 +39,8 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        Tags = @('security','defense','PSEdition_Core','PSEdition_Desktop')
+        Tags = @('security','defense','PSEdition_Core','PSEdition_Desktop',
+        'Defender','ASR','DefenderASR','MicrosoftDefender','WindowsDefender')
 
         # A URL to the license for this module.
         LicenseUri = 'https://opensource.org/licenses/BSD-3-Clause'
