@@ -111,7 +111,7 @@ SYNOPSIS
 
     -------------------------- EXAMPLE 3 --------------------------
 
-    C:\PS>Get-ASRRuleData -Name 'Block  Win32 API calls from Office macros' | Format-List *
+    C:\PS>Get-ASRRuleData -Name 'Block Win32 API calls from Office macros' | Format-List *
 
 
     Get info about this specific rule and lists all the info
@@ -121,7 +121,7 @@ SYNOPSIS
 
     -------------------------- EXAMPLE 4 --------------------------
 
-    C:\PS>Get-ASRRuleData -Id 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Format-List *
+    C:\PS>Get-ASRRuleData -Id 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b | Format-List *
 
 
     Get info about this specific rule and lists all the info
