@@ -20,7 +20,7 @@ Function Set-ASRRuleConfig {
     Simulate what rules that are currenly not configured would be set to Audit.
 
 .EXAMPLE
-    Get-ASRRuleData | Set-ASRRuleConfig -WhatIf -Mode AuditMode
+    Get-ASRRuleData | Set-ASRRuleConfig -Mode AuditMode -Verbose
 
     Change all local rules and set their config to AuditMode
 
@@ -178,12 +178,12 @@ Function Get-ASRRuleData {
     Get info about rules from the 'Executables and Scripts' category
 
 .EXAMPLE
-    Get-ASRRuleData -Name 'Block  Win32 API calls from Office macros' | Format-List *
+    Get-ASRRuleData -Name 'Block Win32 API calls from Office macros' | Format-List *
 
     Get info about this specific rule and lists all the info
 
 .EXAMPLE
-    Get-ASRRuleData -Id 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Format-List *
+    Get-ASRRuleData -Id 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b | Format-List *
 
     Get info about this specific rule and lists all the info
 
@@ -260,7 +260,7 @@ DynamicParam {
         @{
             Category = 'Microsoft Office'
             RuleName = 'Block all Office applications from creating child processes'
-	        GUID = 'D4F940AB-401B-4EFC-AADC-AD5F3C50688A'
+	        GUID = 'd4f940ab-401b-4efc-aadc-ad5f3c50688a'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -276,7 +276,7 @@ DynamicParam {
         @{
             Category = 'E-mail and Webmail'
             RuleName = 'Block executable content from email client and webmail'
-	        GUID = 'BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550'
+	        GUID = 'be9ba2d9-53ea-4cdc-84e5-9b1eeee46550'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -292,7 +292,7 @@ DynamicParam {
         @{
             Category = 'Executables and Scripts'
             RuleName = 'Block execution of potentially obfuscated scripts'
-	        GUID = '5BEB7EFE-FD9A-4556-801D-275E5FFC04CC'
+	        GUID = '5beb7efe-fd9a-4556-801d-275e5ffc04cc'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -300,7 +300,7 @@ DynamicParam {
         @{
             Category = 'Executables and Scripts'
             RuleName = 'Block JavaScript or VBScript from launching downloaded executable content'
-	        GUID = 'D3E037E1-3EB8-44C8-A917-57927947596D'
+	        GUID = 'd3e037e1-3eb8-44c8-a917-57927947596d'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -308,7 +308,7 @@ DynamicParam {
         @{
             Category = 'Microsoft Office'
             RuleName = 'Block Office applications from creating executable content'
-	        GUID = '3B576869-A4EC-4529-8536-B80A7769E899'
+	        GUID = '3b576869-a4ec-4529-8536-b80a7769e899'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -316,7 +316,7 @@ DynamicParam {
         @{
             Category = 'Microsoft Office'
             RuleName = 'Block Office applications from injecting code into other processes'
-	        GUID = '75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84'
+	        GUID = '75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
@@ -363,8 +363,8 @@ DynamicParam {
         },
         @{
             Category = 'Microsoft Office'
-            RuleName = 'Block  Win32 API calls from Office macros'
-	        GUID = '92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B'
+            RuleName = 'Block Win32 API calls from Office macros'
+	        GUID = '92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b'
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
