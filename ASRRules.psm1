@@ -392,6 +392,14 @@ DynamicParam {
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
+        },
+        @{
+            Category = 'Executables and Scripts'
+            RuleName = 'Block use of copied or impersonated system tools'
+	        GUID = 'c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb'
+            'File & folder exclusions Supported' =	$true
+            MinOSVersion = [version]'10.0.16299.0'
+            'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
         }
     )
     #endregion
