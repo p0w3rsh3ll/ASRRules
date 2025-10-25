@@ -376,7 +376,16 @@ DynamicParam {
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
+        },
+        @{
+            Category = 'Device Control'
+            RuleName = 'Block rebooting machine in Safe Mode'
+	        GUID = '33ddedf1-c6e0-47cb-833e-de6133960387'
+            'File & folder exclusions Supported' =	$true
+            MinOSVersion = [version]'10.0.16299.0'
+            'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
         }
+
     )
     #endregion
 
