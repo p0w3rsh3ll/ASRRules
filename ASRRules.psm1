@@ -384,8 +384,15 @@ DynamicParam {
             'File & folder exclusions Supported' =	$true
             MinOSVersion = [version]'10.0.16299.0'
             'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
+        },
+        @{
+            Category = 'Executables and Scripts'
+            RuleName = 'Block Webshell creation for Servers'
+	        GUID = 'a8f5898e-1dc8-49a9-9878-85004b8a61e6'
+            'File & folder exclusions Supported' =	$true
+            MinOSVersion = [version]'10.0.16299.0'
+            'Minimum OS supported' = 'Windows 10, version 1709 (RS3, build 16299) or greater'
         }
-
     )
     #endregion
 
