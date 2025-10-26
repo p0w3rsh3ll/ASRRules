@@ -50,6 +50,17 @@ PrivateData = @{
 
          ExternalModuleDependencies = @('ConfigDefender')
 
+        # ReleaseNotes of this module
+        ReleaseNotes = @'
+2025.10.26 - Version 2.0.0
+2025.10.26 - Adding rule: Block use of copied or impersonated system tools
+2025.10.26 - Adding rule: Block Webshell creation for Servers
+2025.10.26 - Adding rule: Block rebooting machine in Safe Mode
+2021.12.11 - Version 1.0.1 
+2021.12.11 - Adding rule: Block abuse of exploited vulnerable signed drivers
+2021.03.25 - Version 1.0.0
+'@
+
     } # End of PSData hashtable
 
 } # End of PrivateData hashtable
