@@ -231,3 +231,5 @@ https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystify
 https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968
 
 https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425
+
+https://www.powershellgallery.com/packages/ASRRules
